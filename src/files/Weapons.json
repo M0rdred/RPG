@@ -4,628 +4,628 @@
   "type" : "blunt",
   "range" : "melee",
   "attackNumber" : 2.0,
-  "ké" : 10,
-  "té" : 4,
-  "vé" : 1,
-  "cé" : 0
+  "initValue" : 10,
+  "attackValue" : 4,
+  "defenseValue" : 1,
+  "targetValue" : 0
 }, {
   "name" : "short sword",
   "damage" : "k6+1",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 9,
-  "té" : 12,
-  "vé" : 14,
-  "cé" : 0
+  "initValue" : 9,
+  "attackValue" : 12,
+  "defenseValue" : 14,
+  "targetValue" : 0
 }, {
   "name" : "long sword",
   "damage" : "k10",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 6,
-  "té" : 14,
-  "vé" : 16,
-  "cé" : 0
+  "initValue" : 6,
+  "attackValue" : 14,
+  "defenseValue" : 16,
+  "targetValue" : 0
 }, {
   "name" : "bastard sword",
   "damage" : "2k6",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 4,
-  "té" : 13,
-  "vé" : 12,
-  "cé" : 0
+  "initValue" : 4,
+  "attackValue" : 13,
+  "defenseValue" : 12,
+  "targetValue" : 0
 }, {
   "name" : "knight sword",
   "damage" : "2k6+2",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 2,
-  "té" : 10,
-  "vé" : 7,
-  "cé" : 0
+  "initValue" : 2,
+  "attackValue" : 10,
+  "defenseValue" : 7,
+  "targetValue" : 0
 }, {
   "name" : "broadsword",
   "damage" : "3k6+2",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 0.5,
-  "ké" : 0,
-  "té" : 6,
-  "vé" : 2,
-  "cé" : 0
+  "initValue" : 0,
+  "attackValue" : 6,
+  "defenseValue" : 2,
+  "targetValue" : 0
 }, {
   "name" : "sabre",
   "damage" : "k6+2",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 7,
-  "té" : 15,
-  "vé" : 17,
-  "cé" : 0
+  "initValue" : 7,
+  "attackValue" : 15,
+  "defenseValue" : 17,
+  "targetValue" : 0
 }, {
   "name" : "jenn sabre",
   "damage" : "k6+3",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 9,
-  "té" : 20,
-  "vé" : 17,
-  "cé" : 0
+  "initValue" : 9,
+  "attackValue" : 20,
+  "defenseValue" : 17,
+  "targetValue" : 0
 }, {
   "name" : "yatagan",
   "damage" : "k6+2",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 7,
-  "té" : 14,
-  "vé" : 14,
-  "cé" : 0
+  "initValue" : 7,
+  "attackValue" : 14,
+  "defenseValue" : 14,
+  "targetValue" : 0
 }, {
   "name" : "scimitar",
   "damage" : "k6+3",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 6,
-  "té" : 14,
-  "vé" : 15,
-  "cé" : 0
+  "initValue" : 6,
+  "attackValue" : 14,
+  "defenseValue" : 15,
+  "targetValue" : 0
 }, {
   "name" : "headhunter sword",
   "damage" : "k6+2",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 8,
-  "té" : 16,
-  "vé" : 16,
-  "cé" : 0
+  "initValue" : 8,
+  "attackValue" : 16,
+  "defenseValue" : 16,
+  "targetValue" : 0
 }, {
   "name" : "Slan sword",
   "damage" : "k10+2",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 8,
-  "té" : 20,
-  "vé" : 12,
-  "cé" : 0
+  "initValue" : 8,
+  "attackValue" : 20,
+  "defenseValue" : 12,
+  "targetValue" : 0
 }, {
   "name" : "serpent sword",
   "damage" : "k10",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 6,
-  "té" : 14,
-  "vé" : 15,
-  "cé" : 0
+  "initValue" : 6,
+  "attackValue" : 14,
+  "defenseValue" : 15,
+  "targetValue" : 0
 }, {
   "name" : "knife",
   "damage" : "k5",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 2.0,
-  "ké" : 10,
-  "té" : 4,
-  "vé" : 0,
-  "cé" : 0
+  "initValue" : 10,
+  "attackValue" : 4,
+  "defenseValue" : 0,
+  "targetValue" : 0
 }, {
   "name" : "Mara-sequor",
   "damage" : "2k6+2",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 7,
-  "té" : 16,
-  "vé" : 14,
-  "cé" : 0
+  "initValue" : 7,
+  "attackValue" : 16,
+  "defenseValue" : 14,
+  "targetValue" : 0
 }, {
   "name" : "ramiera",
   "damage" : "k6+1",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 2.0,
-  "ké" : 8,
-  "té" : 17,
-  "vé" : 14,
-  "cé" : 0
+  "initValue" : 8,
+  "attackValue" : 17,
+  "defenseValue" : 14,
+  "targetValue" : 0
 }, {
   "name" : "sequor",
   "damage" : "k6+2",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 2.0,
-  "ké" : 8,
-  "té" : 13,
-  "vé" : 16,
-  "cé" : 0
+  "initValue" : 8,
+  "attackValue" : 13,
+  "defenseValue" : 16,
+  "targetValue" : 0
 }, {
   "name" : "Slan star",
   "damage" : "k3",
   "type" : "thrust",
   "range" : "throw",
   "attackNumber" : 3.0,
-  "ké" : 10,
-  "té" : 4,
-  "vé" : 0,
-  "cé" : 0
+  "initValue" : 10,
+  "attackValue" : 4,
+  "defenseValue" : 0,
+  "targetValue" : 0
 }, {
   "name" : "dagger",
   "damage" : "k6",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 2.0,
-  "ké" : 10,
-  "té" : 8,
-  "vé" : 2,
-  "cé" : 0
+  "initValue" : 10,
+  "attackValue" : 8,
+  "defenseValue" : 2,
+  "targetValue" : 0
 }, {
   "name" : "throwing dagger",
   "damage" : "k6",
   "type" : "thrust",
   "range" : "trow",
   "attackNumber" : 2.0,
-  "ké" : 10,
-  "té" : 11,
-  "vé" : 2,
-  "cé" : 0
+  "initValue" : 10,
+  "attackValue" : 11,
+  "defenseValue" : 2,
+  "targetValue" : 0
 }, {
   "name" : "Slan dagger",
   "damage" : "k6+2",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 2.0,
-  "ké" : 9,
-  "té" : 14,
-  "vé" : 6,
-  "cé" : 0
+  "initValue" : 9,
+  "attackValue" : 14,
+  "defenseValue" : 6,
+  "targetValue" : 0
 }, {
   "name" : "rapier",
   "damage" : "k6+2",
   "type" : "thrust",
   "range" : "melee",
   "attackNumber" : 2.0,
-  "ké" : 9,
-  "té" : 12,
-  "vé" : 14,
-  "cé" : 0
+  "initValue" : 9,
+  "attackValue" : 12,
+  "defenseValue" : 14,
+  "targetValue" : 0
 }, {
   "name" : "Shadlek mace",
   "damage" : "k6+1",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 8,
-  "té" : 13,
-  "vé" : 14,
-  "cé" : 0
+  "initValue" : 8,
+  "attackValue" : 13,
+  "defenseValue" : 14,
+  "targetValue" : 0
 }, {
   "name" : "one hand battleaxe",
   "damage" : "k10",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 5,
-  "té" : 12,
-  "vé" : 11,
-  "cé" : 0
+  "initValue" : 5,
+  "attackValue" : 12,
+  "defenseValue" : 11,
+  "targetValue" : 0
 }, {
   "name" : "two hand battleaxe",
   "damage" : "3k6",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 0.5,
-  "ké" : 0,
-  "té" : 8,
-  "vé" : 6,
-  "cé" : 0
+  "initValue" : 0,
+  "attackValue" : 8,
+  "defenseValue" : 6,
+  "targetValue" : 0
 }, {
   "name" : "battlepick",
   "damage" : "k10",
   "type" : "thrust",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 5,
-  "té" : 11,
-  "vé" : 8,
-  "cé" : 0
+  "initValue" : 5,
+  "attackValue" : 11,
+  "defenseValue" : 8,
+  "targetValue" : 0
 }, {
   "name" : "throwing axe",
   "damage" : "k6",
   "type" : "sharp",
   "range" : "throw",
   "attackNumber" : 2.0,
-  "ké" : 9,
-  "té" : 10,
-  "vé" : 4,
-  "cé" : 0
+  "initValue" : 9,
+  "attackValue" : 10,
+  "defenseValue" : 4,
+  "targetValue" : 0
 }, {
   "name" : "short staff",
   "damage" : "k3",
   "type" : "blunt",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 9,
-  "té" : 9,
-  "vé" : 17,
-  "cé" : 0
+  "initValue" : 9,
+  "attackValue" : 9,
+  "defenseValue" : 17,
+  "targetValue" : 0
 }, {
   "name" : "long staff",
   "damage" : "k5",
   "type" : "blunt",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 4,
-  "té" : 10,
-  "vé" : 16,
-  "cé" : 0
+  "initValue" : 4,
+  "attackValue" : 10,
+  "defenseValue" : 16,
+  "targetValue" : 0
 }, {
   "name" : "billy",
   "damage" : "k6",
   "type" : "blunt",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 2,
-  "té" : 7,
-  "vé" : 14,
-  "cé" : 0
+  "initValue" : 2,
+  "attackValue" : 7,
+  "defenseValue" : 14,
+  "targetValue" : 0
 }, {
   "name" : "one hand mace",
   "damage" : "k6",
   "type" : "blunt",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 7,
-  "té" : 11,
-  "vé" : 12,
-  "cé" : 0
+  "initValue" : 7,
+  "attackValue" : 11,
+  "defenseValue" : 12,
+  "targetValue" : 0
 }, {
   "name" : "two hand mace",
   "damage" : "3k6",
   "type" : "blunt",
   "range" : "melee",
   "attackNumber" : 0.5,
-  "ké" : 0,
-  "té" : 7,
-  "vé" : 6,
-  "cé" : 0
+  "initValue" : 0,
+  "attackValue" : 7,
+  "defenseValue" : 6,
+  "targetValue" : 0
 }, {
   "name" : "spiked mace",
   "damage" : "k6+2",
   "type" : "blunt",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 7,
-  "té" : 12,
-  "vé" : 13,
-  "cé" : 0
+  "initValue" : 7,
+  "attackValue" : 12,
+  "defenseValue" : 13,
+  "targetValue" : 0
 }, {
   "name" : "feathered mace",
   "damage" : "k6+1",
   "type" : "blunt",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 7,
-  "té" : 12,
-  "vé" : 13,
-  "cé" : 0
+  "initValue" : 7,
+  "attackValue" : 12,
+  "defenseValue" : 13,
+  "targetValue" : 0
 }, {
   "name" : "flail",
   "damage" : "k6+3",
   "type" : "blunt",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 4,
-  "té" : 13,
-  "vé" : 11,
-  "cé" : 0
+  "initValue" : 4,
+  "attackValue" : 13,
+  "defenseValue" : 11,
+  "targetValue" : 0
 }, {
   "name" : "flapper",
   "damage" : "k6+1",
   "type" : "blunt",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 1,
-  "té" : 6,
-  "vé" : 5,
-  "cé" : 0
+  "initValue" : 1,
+  "attackValue" : 6,
+  "defenseValue" : 5,
+  "targetValue" : 0
 }, {
   "name" : "battlehammer",
   "damage" : "k6+2",
   "type" : "blunt",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 5,
-  "té" : 10,
-  "vé" : 8,
-  "cé" : 0
+  "initValue" : 5,
+  "attackValue" : 10,
+  "defenseValue" : 8,
+  "targetValue" : 0
 }, {
   "name" : "halberd",
   "damage" : "2k6+2",
   "type" : "sharp",
   "range" : "melee",
   "attackNumber" : 0.5,
-  "ké" : 1,
-  "té" : 14,
-  "vé" : 15,
-  "cé" : 0
+  "initValue" : 1,
+  "attackValue" : 14,
+  "defenseValue" : 15,
+  "targetValue" : 0
 }, {
   "name" : "javelin",
   "damage" : "k6+1",
   "type" : "thrust",
   "range" : "throw",
   "attackNumber" : 1.0,
-  "ké" : 8,
-  "té" : 13,
-  "vé" : 5,
-  "cé" : 0
+  "initValue" : 8,
+  "attackValue" : 13,
+  "defenseValue" : 5,
+  "targetValue" : 0
 }, {
   "name" : "light lance",
   "damage" : "k10",
   "type" : "thrust",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 2,
-  "té" : 11,
-  "vé" : 12,
-  "cé" : 0
+  "initValue" : 2,
+  "attackValue" : 11,
+  "defenseValue" : 12,
+  "targetValue" : 0
 }, {
   "name" : "cavalary lance",
   "damage" : "k6",
   "type" : "thrust, other",
   "range" : "melee",
   "attackNumber" : 0.5,
-  "ké" : 1,
-  "té" : 15,
-  "vé" : 0,
-  "cé" : 0
+  "initValue" : 1,
+  "attackValue" : 15,
+  "defenseValue" : 0,
+  "targetValue" : 0
 }, {
   "name" : "heavy cavalary lance",
   "damage" : "2k10",
   "type" : "thrust",
   "range" : "melee, other",
   "attackNumber" : 0.33,
-  "ké" : 0,
-  "té" : 16,
-  "vé" : 0,
-  "cé" : 0
+  "initValue" : 0,
+  "attackValue" : 16,
+  "defenseValue" : 0,
+  "targetValue" : 0
 }, {
   "name" : "spear",
   "damage" : "k10",
   "type" : "thrust",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 4,
-  "té" : 12,
-  "vé" : 12,
-  "cé" : 0
+  "initValue" : 4,
+  "attackValue" : 12,
+  "defenseValue" : 12,
+  "targetValue" : 0
 }, {
   "name" : "harpoon",
   "damage" : "k10+1",
   "type" : "thrust",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 4,
-  "té" : 15,
-  "vé" : 10,
-  "cé" : 0
+  "initValue" : 4,
+  "attackValue" : 15,
+  "defenseValue" : 10,
+  "targetValue" : 0
 }, {
   "name" : "blow pipe",
   "damage" : "k2-1",
   "type" : "thrust",
   "range" : "ranged",
   "attackNumber" : 3.0,
-  "ké" : 8,
-  "té" : 0,
-  "vé" : 0,
-  "cé" : 7
+  "initValue" : 8,
+  "attackValue" : 0,
+  "defenseValue" : 0,
+  "targetValue" : 7
 }, {
   "name" : "short bow",
   "damage" : "k6",
   "type" : "arrow",
   "range" : "ranged",
   "attackNumber" : 2.0,
-  "ké" : 5,
-  "té" : 0,
-  "vé" : 0,
-  "cé" : 4
+  "initValue" : 5,
+  "attackValue" : 0,
+  "defenseValue" : 0,
+  "targetValue" : 4
 }, {
   "name" : "long bow",
   "damage" : "k6+1",
   "type" : "arrow",
   "range" : "ranged",
   "attackNumber" : 2.0,
-  "ké" : 4,
-  "té" : 0,
-  "vé" : 0,
-  "cé" : 6
+  "initValue" : 4,
+  "attackValue" : 0,
+  "defenseValue" : 0,
+  "targetValue" : 6
 }, {
   "name" : "reflex bow",
   "damage" : "k10",
   "type" : "arrow",
   "range" : "ranged",
   "attackNumber" : 2.0,
-  "ké" : 3,
-  "té" : 0,
-  "vé" : 0,
-  "cé" : 8
+  "initValue" : 3,
+  "attackValue" : 0,
+  "defenseValue" : 0,
+  "targetValue" : 8
 }, {
   "name" : "elf bow",
   "damage" : "2k6",
   "type" : "arrow",
   "range" : "ranged",
   "attackNumber" : 2.0,
-  "ké" : 6,
-  "té" : 0,
-  "vé" : 0,
-  "cé" : 10
+  "initValue" : 6,
+  "attackValue" : 0,
+  "defenseValue" : 0,
+  "targetValue" : 10
 }, {
   "name" : "aquir crossbow",
   "damage" : "k5",
   "type" : "arrow",
   "range" : "ranged",
   "attackNumber" : 2.0,
-  "ké" : 5,
-  "té" : 0,
-  "vé" : 0,
-  "cé" : 18
+  "initValue" : 5,
+  "attackValue" : 0,
+  "defenseValue" : 0,
+  "targetValue" : 18
 }, {
   "name" : "hand crossbow",
   "damage" : "k3",
   "type" : "arrow",
   "range" : "ranged",
   "attackNumber" : 2.0,
-  "ké" : 3,
-  "té" : 0,
-  "vé" : 0,
-  "cé" : 14
+  "initValue" : 3,
+  "attackValue" : 0,
+  "defenseValue" : 0,
+  "targetValue" : 14
 }, {
   "name" : "khare crossbow",
   "damage" : "k3",
   "type" : "arrow",
   "range" : "ranged",
   "attackNumber" : 3.0,
-  "ké" : 9,
-  "té" : 0,
-  "vé" : 0,
-  "cé" : 13
+  "initValue" : 9,
+  "attackValue" : 0,
+  "defenseValue" : 0,
+  "targetValue" : 13
 }, {
   "name" : "light crossbow",
   "damage" : "k6+1",
   "type" : "arrow",
   "range" : "ranged",
   "attackNumber" : 1.0,
-  "ké" : 2,
-  "té" : 0,
-  "vé" : 0,
-  "cé" : 16
+  "initValue" : 2,
+  "attackValue" : 0,
+  "defenseValue" : 0,
+  "targetValue" : 16
 }, {
   "name" : "heavy crossbow",
   "damage" : "k10+2",
   "type" : "arrow",
   "range" : "ranged",
   "attackNumber" : 0.33,
-  "ké" : 0,
-  "té" : 0,
-  "vé" : 0,
-  "cé" : 15
+  "initValue" : 0,
+  "attackValue" : 0,
+  "defenseValue" : 0,
+  "targetValue" : 15
 }, {
   "name" : "shadoni armor piercing crossbow",
   "damage" : "2k10",
   "type" : "arrow",
   "range" : "ranged",
   "attackNumber" : 0.2,
-  "ké" : 0,
-  "té" : 0,
-  "vé" : 0,
-  "cé" : 17
+  "initValue" : 0,
+  "attackValue" : 0,
+  "defenseValue" : 0,
+  "targetValue" : 17
 }, {
   "name" : "sling",
   "damage" : "k5",
   "type" : "blunt",
   "range" : "ranged",
   "attackNumber" : 2.0,
-  "ké" : 2,
-  "té" : 0,
-  "vé" : 0,
-  "cé" : 1
+  "initValue" : 2,
+  "attackValue" : 0,
+  "defenseValue" : 0,
+  "targetValue" : 1
 }, {
   "name" : "bola",
   "damage" : "k5",
   "type" : "other",
   "range" : "throw",
   "attackNumber" : 1.0,
-  "ké" : 2,
-  "té" : 10,
-  "vé" : 2,
-  "cé" : 0
+  "initValue" : 2,
+  "attackValue" : 10,
+  "defenseValue" : 2,
+  "targetValue" : 0
 }, {
   "name" : "throwing net",
   "damage" : "k0",
   "type" : "other",
   "range" : "throw",
   "attackNumber" : 0.33,
-  "ké" : 1,
-  "té" : 8,
-  "vé" : 4,
-  "cé" : 0
+  "initValue" : 1,
+  "attackValue" : 8,
+  "defenseValue" : 4,
+  "targetValue" : 0
 }, {
   "name" : "garott",
   "damage" : "k10",
   "type" : "other",
   "range" : "melee",
   "attackNumber" : 1.0,
-  "ké" : 0,
-  "té" : 5,
-  "vé" : -20,
-  "cé" : 0
+  "initValue" : 0,
+  "attackValue" : 5,
+  "defenseValue" : -20,
+  "targetValue" : 0
 }, {
   "name" : "scourge",
   "damage" : "k3",
   "type" : "other",
   "range" : "melee",
   "attackNumber" : 2.0,
-  "ké" : 4,
-  "té" : 6,
-  "vé" : 0,
-  "cé" : 0
+  "initValue" : 4,
+  "attackValue" : 6,
+  "defenseValue" : 0,
+  "targetValue" : 0
 }, {
   "name" : "lasso",
   "damage" : "0",
   "type" : "other",
   "range" : "throw",
   "attackNumber" : 0.33,
-  "ké" : 0,
-  "té" : 1,
-  "vé" : 0,
-  "cé" : 0
+  "initValue" : 0,
+  "attackValue" : 1,
+  "defenseValue" : 0,
+  "targetValue" : 0
 }, {
   "name" : "whip",
   "damage" : "k2",
   "type" : "other",
   "range" : "melee",
   "attackNumber" : 2.0,
-  "ké" : 3,
-  "té" : 6,
-  "vé" : 0,
-  "cé" : 0
+  "initValue" : 3,
+  "attackValue" : 6,
+  "defenseValue" : 0,
+  "targetValue" : 0
 }, {
   "name" : "ironfist",
   "damage" : "k3",
   "type" : "blunt",
   "range" : "melee",
   "attackNumber" : 2.0,
-  "ké" : 9,
-  "té" : 5,
-  "vé" : 2,
-  "cé" : 0
+  "initValue" : 9,
+  "attackValue" : 5,
+  "defenseValue" : 2,
+  "targetValue" : 0
 } ]

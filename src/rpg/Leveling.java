@@ -40,19 +40,19 @@ public class Leveling {
             scanner = new Scanner(System.in);
         }
 
-        adventurer.setFpMax(RollDice.roll(adventurer.getFpMax() + adventurer.getFpPerLvl()));
+        adventurer.setFpMax(adventurer.getFpMax() + RollDice.roll(adventurer.getFpPerLvl()));
         adventurer.setPsziMax(adventurer.getPsziMax() + adventurer.getPsziPerLvl());
         adventurer.setMpMax(adventurer.getMpMax() + adventurer.getMpPerLvl());
         adventurer.setKp(adventurer.getKp() + adventurer.getKpPerLvl());
 
         String modPerLvl = adventurer.getModPerLvl();
         int modBase = Integer.parseInt(modPerLvl.substring(0, modPerLvl.indexOf("(")));
-        int modStrict = Integer.parseInt(modPerLvl.substring(modPerLvl.indexOf("("), modPerLvl.indexOf(")")));
+        int modStrict = Integer.parseInt(modPerLvl.substring(modPerLvl.indexOf("(") + 1, modPerLvl.indexOf(")")));
         int modDivide = modBase - modStrict - modStrict;
 
         System.out.println("Your combat value modifier is: " + modPerLvl);
-        System.out.println("You have to spend " + modStrict + "points both to attack and defense");
-        System.out.printf("You can freely divide the remainder " + modDivide + "points");
+        System.out.println("You have to spend " + modStrict + " points both to attack and defense.");
+        System.out.println("You can freely divide the remainder " + modDivide + " points.");
         
         
         //TODO

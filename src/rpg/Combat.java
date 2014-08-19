@@ -101,8 +101,8 @@ public class Combat {
 
             System.out.printf("%s is attacker and %s is defender.\n", adventurer.getName(), defender.getName());
 
-            attack = adventurer.calculateTé();
-            defense = defender.calculateVé();
+            attack = adventurer.calculateAttackValue();
+            defense = defender.calculateDefenseValue();
 
             if (attack >= defense) {
                 damage = adventurer.calculateDamage();
@@ -166,7 +166,7 @@ public class Combat {
             boolean match = false;
             adventurer = adventurers.get(i);
             do {
-                init[i] = 1000 - adventurer.calculateKé();
+                init[i] = 1000 - adventurer.calculateInitValue();
 
                 for (int count = 0; count < end; count++) {
                     if (init[count] == init[i] && count != i) {

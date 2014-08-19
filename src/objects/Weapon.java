@@ -4,48 +4,45 @@
  */
 package objects;
 
-import javax.xml.bind.annotation.*;
-
 /**
  *
  * @author dszabo1
  */
-@XmlType(propOrder = {"name", "attackNumber", "ké", "té", "vé", "cé", "damage", "type"})
 public class Weapon {
 
     private String name;
     private String damage;
     private String type;
     private String range;
-    private int Ké;
-    private int Té;
-    private int Vé;
-    private int Cé;
+    private int initValue;
+    private int attackValue;
+    private int defenseValue;
+    private int targetValue;
     private double attackNumber;
 
 //<editor-fold defaultstate="collapsed" desc="Constructors">
     public Weapon() {
-        Té = 0;
-        Vé = 0;
-        Cé = 0;
+        attackValue = 0;
+        defenseValue = 0;
+        targetValue = 0;
     }
 
-    public Weapon(int Ké, int Cé) {
-        this.Ké = Ké;
-        this.Cé = Cé;
+    public Weapon(int initValue, int targetValue) {
+        this.initValue = initValue;
+        this.targetValue = targetValue;
     }
 
-    public Weapon(int Ké, int Té, int Vé) {
-        this.Ké = Ké;
-        this.Té = Té;
-        this.Vé = Vé;
+    public Weapon(int initValue, int attackValue, int defenseValue) {
+        this.initValue = initValue;
+        this.attackValue = attackValue;
+        this.defenseValue = defenseValue;
     }
 
-    public Weapon(int Ké, int Té, int Vé, int Cé, double attackNumber, String name, String damage, String type) {
-        this.Ké = Ké;
-        this.Té = Té;
-        this.Vé = Vé;
-        this.Cé = Cé;
+    public Weapon(int initValue, int attackValue, int defenseValue, int targetValue, double attackNumber, String name, String damage, String type) {
+        this.initValue = initValue;
+        this.attackValue = attackValue;
+        this.defenseValue = defenseValue;
+        this.targetValue = targetValue;
         this.attackNumber = attackNumber;
         this.name = name;
         this.damage = damage;
@@ -53,36 +50,36 @@ public class Weapon {
     }//</editor-fold>
 
 //<editor-fold defaultstate="collapsed" desc="Getters and Setters">
-    public int getKé() {
-        return Ké;
+    public int getInitValue() {
+        return initValue;
     }
 
-    public void setKé(int Ké) {
-        this.Ké = Ké;
+    public void setInitValue(int initValue) {
+        this.initValue = initValue;
     }
 
-    public int getTé() {
-        return Té;
+    public int getAttackValue() {
+        return attackValue;
     }
 
-    public void setTé(int Té) {
-        this.Té = Té;
+    public void setAttackValue(int attackValue) {
+        this.attackValue = attackValue;
     }
 
-    public int getVé() {
-        return Vé;
+    public int getDefenseValue() {
+        return defenseValue;
     }
 
-    public void setVé(int Vé) {
-        this.Vé = Vé;
+    public void setDefenseValue(int defenseValue) {
+        this.defenseValue = defenseValue;
     }
 
-    public int getCé() {
-        return Cé;
+    public int getTargetValue() {
+        return targetValue;
     }
 
-    public void setCé(int Cé) {
-        this.Cé = Cé;
+    public void setTargetValue(int targetValue) {
+        this.targetValue = targetValue;
     }
 
     public double getAttackNumber() {

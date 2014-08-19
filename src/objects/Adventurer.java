@@ -20,7 +20,7 @@ import rpg.RollDice;
  */
 @JsonPropertyOrder({"name", "gender", "age", "race", "caste", "alignment",
     "Strength", "Agility", "Dexterity", "Fitness", "Health", "Intelligence", "Beauty", "Willpower", "Astral",
-    "Ké", "Té", "Vé", "Cé", "FpMax", "ÉpMax", "PsziMax", "MpMax", "Kp",
+    "initValue", "attackValue", "defenseValue", "targetValue", "FpMax", "ÉpMax", "PsziMax", "MpMax", "Kp",
     "modPerLvl", "FpPerLvl", "psziPerLvl", "MpPerLvl", "KpPerLvl",
     "Tp",
     "weapons", "armor"})
@@ -100,7 +100,7 @@ public class Adventurer {
 
     private int Tp;
 
-    private int combatModifier[] = new int[5];  //Ké, attackValue, defenseValue, targetValue, Sebzés       
+    private int combatModifier[] = new int[5];  //initValue, attackValue, defenseValue, targetValue, Sebzés       
 
     @JsonIgnore
     private boolean alive;
@@ -216,69 +216,67 @@ public class Adventurer {
         Pszi = PsziMax;
     }
 
-    public int calculateKé() {
-        int actualKé = initValue;
+    public int calculateInitValue() {
+        int actualInitValue = initValue;
         if (Agility > 10) {
-            actualKé += Agility - 10;
+            actualInitValue += Agility - 10;
         }
         if (Dexterity > 10) {
-            actualKé += Dexterity - 10;
+            actualInitValue += Dexterity - 10;
         }
         if (rightWeapon != null) {
-            actualKé += rightWeapon.getKé();
+            actualInitValue += rightWeapon.getInitValue();
         }
 
-        actualKé += RollDice.roll("k10");
-
-        System.out.println(this.name + "'s KÉ: " + actualKé);
-        return actualKé;
+        actualInitValue += RollDice.roll("k10");
+        return actualInitValue;
     }
 
-    public int calculateTé() {
-        int actualTé = attackValue;
+    public int calculateAttackValue() {
+        int actualAttackValue = attackValue;
 
         if (Strength > 10) {
-            actualTé += Strength - 10;
+            actualAttackValue += Strength - 10;
         }
         if (Agility > 10) {
-            actualTé += Agility - 10;
+            actualAttackValue += Agility - 10;
         }
         if (Dexterity > 10) {
-            actualTé += Dexterity - 10;
+            actualAttackValue += Dexterity - 10;
         }
         if (rightWeapon != null) {
-            actualTé += rightWeapon.getTé();
+            actualAttackValue += rightWeapon.getAttackValue();
         }
-        actualTé += RollDice.roll("k100");
-        return actualTé;
+        actualAttackValue += RollDice.roll("k100");
+        return actualAttackValue;
     }
 
-    public int calculateVé() {
-        int actualVé = defenseValue;
+    public int calculateDefenseValue() {
+        int actualDefenseValue = defenseValue;
         if (Agility > 10) {
-            actualVé += Agility - 10;
+            actualDefenseValue += Agility - 10;
         }
         if (Dexterity > 10) {
-            actualVé += Dexterity - 10;
+            actualDefenseValue += Dexterity - 10;
         }
         if (rightWeapon != null) {
-            actualVé += rightWeapon.getVé();
+            actualDefenseValue += rightWeapon.getDefenseValue();
         }
         if (leftWeapon != null) {
-            actualVé += leftWeapon.getVé();
+            actualDefenseValue += leftWeapon.getDefenseValue();
         }
-        return actualVé;
+        return actualDefenseValue;
     }
 
-    public int calculateCé() {
-        int actualCé = targetValue;
+    public int calculateTargetValue() {
+        int actualTargetValue = targetValue;
         if (Dexterity > 10) {
-            actualCé += Dexterity - 10;
+            actualTargetValue += Dexterity - 10;
         }
         if (rightWeapon != null) {
-            actualCé += rightWeapon.getCé();
+            actualTargetValue += rightWeapon.getTargetValue();
         }
-        return actualCé;
+        return actualTargetValue;
     }
 
     public int calculateDamage() {
