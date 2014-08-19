@@ -53,20 +53,60 @@ public class Leveling {
         System.out.println("Your combat value modifier is: " + modPerLvl);
         System.out.println("You have to spend " + modStrict + " points both to attack and defense.");
         System.out.println("You can freely divide the remainder " + modDivide + " points.");
-        
-        
-        //TODO
-        System.out.print("How much do you want to spend on init: ");        
-        adventurer.setInitValue(adventurer.getInitValue() + scanner.nextInt());
-        
-        System.out.print("How much do you want to spend on attack: ");        
-        adventurer.setAttackValue(adventurer.getAttackValue()+ scanner.nextInt());
-        
-        System.out.print("How much do you want to spend on defense: ");        
-        adventurer.setDefenseValue(adventurer.getDefenseValue()+ scanner.nextInt());
-        
-        System.out.print("How much do you want to spend on target: ");        
-        adventurer.setTargetValue(adventurer.getTargetValue()+ scanner.nextInt());
+
+        boolean looping = true;
+        String[] combatValues = {"init", "attack", "defense", "target"};
+        int i = 0;
+        int divided;
+
+        while (looping) {
+            if (modDivide == 0) {
+                looping = false;
+                continue;
+            }
+
+            System.out.printf("How much do you want to spend on %s: ", combatValues[i]);
+            divided = scanner.nextInt();
+
+            if (divided > modDivide) {
+                System.out.println("You can not spend more than " + modDivide + ", thats the most.");
+                System.out.println("So I ask you again...");
+                System.out.println("");
+                continue;
+            }
+            if (divided > 0) {
+                switch (i) {
+                    case 0:
+                        adventurer.setInitValue(adventurer.getInitValue() + divided);
+                        modDivide -= divided;
+                        i++;
+                        break;
+                    case 1:
+                        adventurer.setAttackValue(adventurer.getAttackValue() + divided);
+                        modDivide -= divided;
+                        i++;
+                        break;
+                    case 2:
+                        adventurer.setDefenseValue(adventurer.getDefenseValue() + divided);
+                        modDivide -= divided;
+                        i++;
+                        break;
+                    case 3:
+                        adventurer.setTargetValue(adventurer.getTargetValue() + divided);
+                        modDivide -= divided;
+                        if (modDivide > 0) {
+                            System.out.println("You can still spend some points. " + modDivide + " precisely.");
+                            System.out.print("Do you want to spend them?(Y/N) ");
+                            if (scanner.next().toLowerCase().equals("y")) {
+                                i = 0;
+                                break;
+                            }
+                        }
+                        looping = false;
+                }
+
+            }
+        }
 
         return adventurer;
     }

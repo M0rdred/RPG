@@ -43,7 +43,6 @@ public class RPG {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        
-        
+
     }
 }

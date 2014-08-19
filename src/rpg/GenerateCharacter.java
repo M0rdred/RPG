@@ -39,6 +39,6 @@ public class GenerateCharacter {
 //        AdventurerDao.saveAdventurer(adventurer);
 //        JsonDao.saveCharAttributes();
 //        System.out.println(CastesDao.getLevelForCaste(200000, "sorcerer"));
-        Leveling.gainXp(adventurer, 1000);
+        Leveling.gainXp(adventurer, 200);
     }
 }
