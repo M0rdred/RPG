@@ -1,0 +1,14 @@
+fighter;k6+12+kf;2k6+6+kf;2k6+6+kf;k10+8+kf;k10+10;3k6(2x);3k6(2x);2k6+6;3k6(2x)
+gladiator;k6+12+kf;2k6+6+kf;2k6+6+kf;k6+12+kf;k10+10;2k6+6;3k6;3k6;3k6
+headHunter;2k6+2;k6+12+kf;k10+8;k6+12+kf;k10+10;3k6;3k6(2x);k10+8;2k6+6
+knight;k6+12+kf;3k6(2x);3k6(2x);k10+8+kf;k10+10;2k6+6+kf;2k6+6;k10+8;3k6(2x)
+thief;3k6(2x);k10+8+kf;k6+12+kf;3k6(2x);3k6(2x);2k6+6;2k6+6;3k6;3k6(2x)
+bard;k10+8;k10+8+kf;k10+8;2k6+6;2k6+6;k6+12+kf;k10+8(2x);2k6+6;k10+8
+priest;2k6+6;3k6(2x);3k6(2x);2k6+6;k10+8;k10+10;k10+8;k10+8+kf;k6+12+kf
+paladin;k10+8+kf;3k6(2x);3k6(2x);k10+8;k10+10;k10+8;2k6+6;k10+8;k6+12
+martialArtist;k10+8;k6+14;k6+12;k6+12;k10+10;3k6(2x);3k6(2x);k6+12;k10+8
+samurai;k10+8;k6+12+kf;k6+14;k10+8;k10+8;3k6(2x);2k6+6;k6+12;k10+8
+witch;3k6;2k6+6;k10+8;3k6;2k6+6;k6+14;2k6+6;2k6+6;k6+12+kf
+warLock;3k6(2x);k10+8;k6+12+kf;3k6(2x);2k6+6;3k6;2k6+6;2k6+6;k6+12
+fireMage;2k6+6;3k6(2x);3k6(2x);2k6+6;2k6+6;3k6;2k6+6;2k6+6;2k6+6
+sorcerer;3k6;3k6(2x);3k6(2x);3k6;3k6(2x);3k6;k6+12+kf;k6+12+kf;k6+12+kf

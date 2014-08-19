@@ -1,0 +1,46 @@
+[ {
+  "elf" : {
+    "Strength" : "-2",
+    "Agility" : "-1",
+    "Dexterity" : "1",
+    "Fitness" : "1",
+    "Health" : "0",
+    "Intelligence" : "1",
+    "Beauty" : "0",
+    "Willpower" : "0",
+    "Astral" : "0"
+  },
+  "halfElf" : {
+    "Strength" : "-1",
+    "Agility" : "0",
+    "Dexterity" : "1",
+    "Fitness" : "0",
+    "Health" : "0",
+    "Intelligence" : "0",
+    "Beauty" : "0",
+    "Willpower" : "0",
+    "Astral" : "0"
+  },
+  "dwarf" : {
+    "Strength" : "1",
+    "Agility" : "1",
+    "Dexterity" : "0",
+    "Fitness" : "0",
+    "Health" : "1",
+    "Intelligence" : "-2",
+    "Beauty" : "-1",
+    "Willpower" : "0",
+    "Astral" : "-1"
+  },
+  "orc" : {
+    "Strength" : "2",
+    "Agility" : "1",
+    "Dexterity" : "0",
+    "Fitness" : "0",
+    "Health" : "2",
+    "Intelligence" : "-3",
+    "Beauty" : "-1",
+    "Willpower" : "0",
+    "Astral" : "-3"
+  }
+} ]

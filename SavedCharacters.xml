@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<adventurer>
+    <name>Mordred</name>
+    <gender>male</gender>
+    <age>25</age>
+    <race>human</race>
+    <caste>fighter</caste>
+    <alignment>Rend/Halál</alignment>
+    <strength>15</strength>
+    <agility>13</agility>
+    <dexterity>14</dexterity>
+    <fitness>10</fitness>
+    <health>11</health>
+    <intelligence>13</intelligence>
+    <beauty>11</beauty>
+    <willpower>16</willpower>
+    <astral>9</astral>
+    <ké>13</ké>
+    <té>28</té>
+    <vé>80</vé>
+    <cé>0</cé>
+    <fpMax>37</fpMax>
+    <épMax>8</épMax>
+    <mpMax>0</mpMax>
+    <psziMax>0</psziMax>
+    <kp>0</kp>
+    <tp>0</tp>
+    <weaponList>
+        <weapon>
+            <name>fist</name>
+            <attackNumber>2</attackNumber>
+            <ké>10</ké>
+            <té>4</té>
+            <vé>1</vé>
+            <cé>0</cé>
+            <damage>k6</damage>
+            <type>melee</type>
+        </weapon>
+    </weaponList>
+    <armor>
+        <material>none</material>
+        <mgt>0</mgt>
+        <name>none</name>
+        <sfé>0</sfé>
+        <stp>0</stp>
+    </armor>
+</adventurer>

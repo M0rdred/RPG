@@ -1,0 +1,193 @@
+[ {
+  "name" : "none",
+  "material" : "none",
+  "sfé" : 0,
+  "mgt" : 0,
+  "stp" : 0
+}, {
+  "name" : "rags",
+  "material" : "rags",
+  "sfé" : 1,
+  "mgt" : 0,
+  "stp" : 0
+}, {
+  "name" : "strenghtened leather",
+  "material" : "leather",
+  "sfé" : 1,
+  "mgt" : 0,
+  "stp" : 0
+}, {
+  "name" : "hardened leather",
+  "material" : "leather",
+  "sfé" : 2,
+  "mgt" : 2,
+  "stp" : 0
+}, {
+  "name" : "ringed",
+  "material" : "leather",
+  "sfé" : 1,
+  "mgt" : 1,
+  "stp" : 0
+}, {
+  "name" : "brigandine",
+  "material" : "leather",
+  "sfé" : 3,
+  "mgt" : 2,
+  "stp" : 0
+}, {
+  "name" : "chainmail",
+  "material" : "steel",
+  "sfé" : 2,
+  "mgt" : 1,
+  "stp" : 0
+}, {
+  "name" : "wiremail",
+  "material" : "steel",
+  "sfé" : 3,
+  "mgt" : 1,
+  "stp" : 0
+}, {
+  "name" : "wiremail",
+  "material" : "abbit",
+  "sfé" : 4,
+  "mgt" : 0,
+  "stp" : 0
+}, {
+  "name" : "wiremail",
+  "material" : "mithril",
+  "sfé" : 5,
+  "mgt" : 0,
+  "stp" : 0
+}, {
+  "name" : "wiremail",
+  "material" : "steel",
+  "sfé" : 3,
+  "mgt" : 1,
+  "stp" : 0
+}, {
+  "name" : "scaled armor",
+  "material" : "steel",
+  "sfé" : 3,
+  "mgt" : 2,
+  "stp" : 0
+}, {
+  "name" : "scaled armor",
+  "material" : "brass",
+  "sfé" : 2,
+  "mgt" : 2,
+  "stp" : 0
+}, {
+  "name" : "scaled armor",
+  "material" : "abbit",
+  "sfé" : 4,
+  "mgt" : 1,
+  "stp" : 0
+}, {
+  "name" : "scaled armor",
+  "material" : "mithril",
+  "sfé" : 5,
+  "mgt" : 0,
+  "stp" : 0
+}, {
+  "name" : "sheeted armor",
+  "material" : "steel",
+  "sfé" : 3,
+  "mgt" : 3,
+  "stp" : 0
+}, {
+  "name" : "sheeted armor",
+  "material" : "brass",
+  "sfé" : 2,
+  "mgt" : 3,
+  "stp" : 0
+}, {
+  "name" : "sheeted armor",
+  "material" : "abbit",
+  "sfé" : 4,
+  "mgt" : 2,
+  "stp" : 0
+}, {
+  "name" : "sheeted armor",
+  "material" : "mithril",
+  "sfé" : 5,
+  "mgt" : 1,
+  "stp" : 0
+}, {
+  "name" : "sheeted armor",
+  "material" : "steel",
+  "sfé" : 3,
+  "mgt" : 1,
+  "stp" : 0
+}, {
+  "name" : "chest armor",
+  "material" : "steel",
+  "sfé" : 4,
+  "mgt" : 4,
+  "stp" : 0
+}, {
+  "name" : "chest armor",
+  "material" : "brass",
+  "sfé" : 3,
+  "mgt" : 4,
+  "stp" : 0
+}, {
+  "name" : "chest armor",
+  "material" : "abbit",
+  "sfé" : 5,
+  "mgt" : 2,
+  "stp" : 0
+}, {
+  "name" : "chest armor",
+  "material" : "mithril",
+  "sfé" : 6,
+  "mgt" : 1,
+  "stp" : 0
+}, {
+  "name" : "half armor",
+  "material" : "steel",
+  "sfé" : 5,
+  "mgt" : 6,
+  "stp" : 0
+}, {
+  "name" : "half armor",
+  "material" : "brass",
+  "sfé" : 4,
+  "mgt" : 6,
+  "stp" : 0
+}, {
+  "name" : "half armor",
+  "material" : "abbit",
+  "sfé" : 6,
+  "mgt" : 4,
+  "stp" : 0
+}, {
+  "name" : "half armor",
+  "material" : "mithril",
+  "sfé" : 7,
+  "mgt" : 7,
+  "stp" : 0
+}, {
+  "name" : "full armor",
+  "material" : "steel",
+  "sfé" : 6,
+  "mgt" : 8,
+  "stp" : 0
+}, {
+  "name" : "full armor",
+  "material" : "brass",
+  "sfé" : 5,
+  "mgt" : 8,
+  "stp" : 0
+}, {
+  "name" : "full armor",
+  "material" : "abbit",
+  "sfé" : 7,
+  "mgt" : 6,
+  "stp" : 0
+}, {
+  "name" : "full armor",
+  "material" : "mithril",
+  "sfé" : 8,
+  "mgt" : 4,
+  "stp" : 0
+} ]

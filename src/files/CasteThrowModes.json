@@ -1,0 +1,156 @@
+[ {
+  "fighter" : {
+    "Strength" : "k6+12+kf",
+    "Agility" : "2k6+6+kf",
+    "Dexterity" : "2k6+6+kf",
+    "Fitness" : "k10+8+kf",
+    "Health" : "k10+10",
+    "Intelligence" : "3k6(2x)",
+    "Beauty" : "3k6(2x)",
+    "Willpower" : "2k6+6",
+    "Astral" : "3k6(2x)"
+  },
+  "gladiator" : {
+    "Strength" : "k6+12+kf",
+    "Agility" : "2k6+6+kf",
+    "Dexterity" : "2k6+6+kf",
+    "Fitness" : "k6+12+kf",
+    "Health" : "k10+10",
+    "Intelligence" : "2k6+6",
+    "Beauty" : "3k6",
+    "Willpower" : "3k6",
+    "Astral" : "3k6"
+  },
+  "headHunter" : {
+    "Strength" : "2k6+2",
+    "Agility" : "k6+12+kf",
+    "Dexterity" : "k10+8",
+    "Fitness" : "k6+12+kf",
+    "Health" : "k10+10",
+    "Intelligence" : "3k6",
+    "Beauty" : "3k6(2x)",
+    "Willpower" : "k10+8",
+    "Astral" : "2k6+6"
+  },
+  "knight" : {
+    "Strength" : "k6+12+kf",
+    "Agility" : "3k6(2x)",
+    "Dexterity" : "3k6(2x)",
+    "Fitness" : "k10+8+kf",
+    "Health" : "k10+10",
+    "Intelligence" : "2k6+6+kf",
+    "Beauty" : "2k6+6",
+    "Willpower" : "k10+8",
+    "Astral" : "3k6(2x)"
+  },
+  "thief" : {
+    "Strength" : "3k6(2x)",
+    "Agility" : "k10+8+kf",
+    "Dexterity" : "k6+12+kf",
+    "Fitness" : "3k6(2x)",
+    "Health" : "3k6(2x)",
+    "Intelligence" : "2k6+6",
+    "Beauty" : "2k6+6",
+    "Willpower" : "3k6",
+    "Astral" : "3k6(2x)"
+  },
+  "bard" : {
+    "Strength" : "k10+8",
+    "Agility" : "k10+8+kf",
+    "Dexterity" : "k10+8",
+    "Fitness" : "2k6+6",
+    "Health" : "2k6+6",
+    "Intelligence" : "k6+12+kf",
+    "Beauty" : "k10+8(2x)",
+    "Willpower" : "2k6+6",
+    "Astral" : "k10+8"
+  },
+  "priest" : {
+    "Strength" : "2k6+6",
+    "Agility" : "3k6(2x)",
+    "Dexterity" : "3k6(2x)",
+    "Fitness" : "2k6+6",
+    "Health" : "k10+8",
+    "Intelligence" : "k10+10",
+    "Beauty" : "k10+8",
+    "Willpower" : "k10+8+kf",
+    "Astral" : "k6+12+kf"
+  },
+  "paladin" : {
+    "Strength" : "k10+8+kf",
+    "Agility" : "3k6(2x)",
+    "Dexterity" : "3k6(2x)",
+    "Fitness" : "k10+8",
+    "Health" : "k10+10",
+    "Intelligence" : "k10+8",
+    "Beauty" : "2k6+6",
+    "Willpower" : "k10+8",
+    "Astral" : "k6+12"
+  },
+  "martialArtist" : {
+    "Strength" : "k10+8",
+    "Agility" : "k6+14",
+    "Dexterity" : "k6+12",
+    "Fitness" : "k6+12",
+    "Health" : "k10+10",
+    "Intelligence" : "3k6(2x)",
+    "Beauty" : "3k6(2x)",
+    "Willpower" : "k6+12",
+    "Astral" : "k10+8"
+  },
+  "samurai" : {
+    "Strength" : "k10+8",
+    "Agility" : "k6+12+kf",
+    "Dexterity" : "k6+14",
+    "Fitness" : "k10+8",
+    "Health" : "k10+8",
+    "Intelligence" : "3k6(2x)",
+    "Beauty" : "2k6+6",
+    "Willpower" : "k6+12",
+    "Astral" : "k10+8"
+  },
+  "witch" : {
+    "Strength" : "3k6",
+    "Agility" : "2k6+6",
+    "Dexterity" : "k10+8",
+    "Fitness" : "3k6",
+    "Health" : "2k6+6",
+    "Intelligence" : "k6+14",
+    "Beauty" : "2k6+6",
+    "Willpower" : "2k6+6",
+    "Astral" : "k6+12+kf"
+  },
+  "warlock" : {
+    "Strength" : "null",
+    "Agility" : "null",
+    "Dexterity" : "null",
+    "Fitness" : "null",
+    "Health" : "null",
+    "Intelligence" : "null",
+    "Beauty" : "null",
+    "Willpower" : "null",
+    "Astral" : "null"
+  },
+  "fireMage" : {
+    "Strength" : "2k6+6",
+    "Agility" : "3k6(2x)",
+    "Dexterity" : "3k6(2x)",
+    "Fitness" : "2k6+6",
+    "Health" : "2k6+6",
+    "Intelligence" : "3k6",
+    "Beauty" : "2k6+6",
+    "Willpower" : "2k6+6",
+    "Astral" : "2k6+6"
+  },
+  "sorcerer" : {
+    "Strength" : "3k6",
+    "Agility" : "3k6(2x)",
+    "Dexterity" : "3k6(2x)",
+    "Fitness" : "3k6",
+    "Health" : "3k6(2x)",
+    "Intelligence" : "3k6",
+    "Beauty" : "k6+12+kf",
+    "Willpower" : "k6+12+kf",
+    "Astral" : "k6+12+kf"
+  }
+} ]
