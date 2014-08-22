@@ -1,25 +1,25 @@
-[ {
-  "name" : "little",
-  "attackNumber" : "1",
-  "damage" : "k6",
-  "defenseValue" : 20,
-  "initValue" : 1,
-  "mgt" : 0,
-  "stp" : 0
-}, {
-  "name" : "middle",
-  "attackNumber" : "1",
-  "damage" : "k6",
-  "defenseValue" : 35,
-  "initValue" : 0,
-  "mgt" : 1,
-  "stp" : 0
-}, {
-  "name" : "big",
-  "attackNumber" : "1/2",
-  "damage" : "k6",
-  "defenseValue" : 50,
-  "initValue" : 0,
-  "mgt" : 5,
-  "stp" : 0
-}]
+[{
+        "name": "little",
+        "attackNumber": "1",
+        "damage": "k6",
+        "defenseValue": 20,
+        "initValue": 1,
+        "mgt": 0,
+        "stp": 0
+    }, {
+        "name": "middle",
+        "attackNumber": "1",
+        "damage": "k6",
+        "defenseValue": 35,
+        "initValue": 0,
+        "mgt": 1,
+        "stp": 0
+    }, {
+        "name": "big",
+        "attackNumber": "1/2",
+        "damage": "k6",
+        "defenseValue": 50,
+        "initValue": 0,
+        "mgt": 5,
+        "stp": 0
+    }]

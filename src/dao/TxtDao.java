@@ -44,7 +44,7 @@ public class TxtDao {
 
                 adventurer.setName(scanRow(row, -1));
                 adventurer.setGender(scanRow(row, 0));
-                adventurer.setAge(scanRow(row, 1));
+                adventurer.setAge(Integer.parseInt(scanRow(row, 1)));
                 adventurer.setRace(scanRow(row, 2));
                 adventurer.setCaste(scanRow(row, 3));
                 adventurer.setAlignment(scanRow(row, 4));

@@ -101,38 +101,47 @@ public class JsonDao {
         CastesDao castesDao = new CastesDao();
 
         /*
-        -----------------------------------------
-        Saving caste XP levels-------------------
-        -----------------------------------------
+         -----------------------------------------
+         Saving caste XP levels-------------------
+         -----------------------------------------
         
-        String[] races = {"elf", "halfElf", "dwarf", "orc"};
-        String[] castes = {"fighter", "gladiator", "headHunter", "knight", "thief", "bard", "priest", "paladin", "martialArtist", "samurai", "witch", "warlock", "fireMage", "sorcerer"};
-        String[] attributess = {"Strength", "Agility", "Dexterity", "Fitness", "Health", "Intelligence", "Beauty", "Willpower", "Astral"};
-        int[] levels = {1,2,3,4,5,6,7,8,9,10,11,12,13};
-        String value = "";
-        StringBuilder toWrite = new StringBuilder("{");
-        String jsonQuote = "\"";
+         String[] races = {"elf", "halfElf", "dwarf", "orc"};
+         String[] castes = {"fighter", "gladiator", "headHunter", "knight", "thief", "bard", "priest", "paladin", "martialArtist", "samurai", "witch", "warlock", "fireMage", "sorcerer"};
+         String[] attributess = {"Strength", "Agility", "Dexterity", "Fitness", "Health", "Intelligence", "Beauty", "Willpower", "Astral"};
+         int[] levels = {1,2,3,4,5,6,7,8,9,10,11,12,13};
+         String value = "";
+         StringBuilder toWrite = new StringBuilder("{");
+         String jsonQuote = "\"";
 
-        for (int x = 0, length = castes.length; x < length; x++) {
-            toWrite.append(jsonQuote).append(castes[x]).append(jsonQuote).append(":{");
-            for (int i = 0, end = levels.length; i < end; i++) {
-                value = castesDao.getAttributesMode(castes[x], i);
-                toWrite.append(jsonQuote).append(levels[i]).append(jsonQuote).append(":");
-                toWrite.append(jsonQuote).append(value).append(jsonQuote);
-                if (i == end - 1) {
-                    toWrite.append("},");
-                } else {
-                    toWrite.append(",");
-                }
-            }
+         for (int x = 0, length = castes.length; x < length; x++) {
+         toWrite.append(jsonQuote).append(castes[x]).append(jsonQuote).append(":{");
+         for (int i = 0, end = levels.length; i < end; i++) {
+         value = castesDao.getAttributesMode(castes[x], i);
+         toWrite.append(jsonQuote).append(levels[i]).append(jsonQuote).append(":");
+         toWrite.append(jsonQuote).append(value).append(jsonQuote);
+         if (i == end - 1) {
+         toWrite.append("},");
+         } else {
+         toWrite.append(",");
+         }
+         }
+         }
+         toWrite.append("}");
+         toWrite.deleteCharAt(toWrite.lastIndexOf(","));
+         Object json = objectMapper.readValue(toWrite.toString(), Object.class);
+
+         objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(CASTE_FILE_PATH), json);
+         */
+    }
+
+    public void saveToJson(String path, Object saving) throws IOException {
+
+        File file = new File(path);
+
+        try {
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(file, saving);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        toWrite.append("}");
-        toWrite.deleteCharAt(toWrite.lastIndexOf(","));
-        Object json = objectMapper.readValue(toWrite.toString(), Object.class);
-
-        objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(CASTE_FILE_PATH), json);
-                */
-        
-        
     }
 }

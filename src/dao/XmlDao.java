@@ -95,7 +95,7 @@ public class XmlDao {
                             adventurer.setGender(eventReader.nextEvent().toString());
                             continue;
                         case "age":
-                            adventurer.setAge(eventReader.nextEvent().toString());
+                            adventurer.setAge(Integer.parseInt(eventReader.nextEvent().toString()));
                             continue;
                         case "race":
                             adventurer.setRace(eventReader.nextEvent().toString());

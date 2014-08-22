@@ -110,4 +110,8 @@ public class Leveling {
 
         return adventurer;
     }
+
+    private static int calculateXpGain(Adventurer winner, Adventurer loser) {
+        return 0;
+    }
 }

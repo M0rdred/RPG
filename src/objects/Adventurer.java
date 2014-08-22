@@ -30,7 +30,7 @@ public class Adventurer {
 
     private String gender;
 
-    private String age;
+    private int age;
 
     private String race;
 
@@ -119,7 +119,7 @@ public class Adventurer {
     private Armor armor;
 
     //<editor-fold defaultstate="collapsed" desc="Constructors">
-    public Adventurer(int Strength, int Agility, int Dexterity, int Fitness, int Health, int Intelligence, int Beauty, int Willpower, int Astral, String name, String gender, String age, String race, String caste, String alignment) {
+    public Adventurer(int Strength, int Agility, int Dexterity, int Fitness, int Health, int Intelligence, int Beauty, int Willpower, int Astral, String name, String gender, int age, String race, String caste, String alignment) {
         this.Strength = Strength;
         this.Agility = Agility;
         this.Dexterity = Dexterity;
@@ -533,11 +533,11 @@ public class Adventurer {
         this.gender = gender;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 

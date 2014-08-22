@@ -9,9 +9,10 @@ import objects.Adventurer;
 public class CharGen {
 
     Scanner scanner = new Scanner(System.in);
-    private String charName, charGender, charAge, charRace, charCaste,charAlignment;
+    private String charName, charGender, charRace, charCaste,charAlignment;
     private String[] attributeNames = new String[]{"Strength", "Agility", "Dexterity", "Fitness", "Health", "Intelligence", "Beauty", "Willpower", "Astral"};
     private int[] attributes = new int[9];
+    private int charAge;
 
     public Adventurer buildCharacter() throws IOException, Exception {
 
@@ -38,7 +39,7 @@ public class CharGen {
     private void test() {
         charName = "Ranagol";
         charGender = "male";
-        charAge = "35";
+        charAge = 35;
         charRace = "elf";
         charCaste = "headhunter";
         charAlignment = "Halál/Rend";
@@ -59,7 +60,7 @@ public class CharGen {
     private void setAge() {
 
         System.out.print("Please enter your characters age: ");
-        charAge = scanner.nextLine();
+        charAge = scanner.nextInt();
     }
 
     private void setRace() {
@@ -87,7 +88,7 @@ public class CharGen {
         return charGender;
     }
 
-    public String getAge() {
+    public int getAge() {
         return charAge;
     }
 
