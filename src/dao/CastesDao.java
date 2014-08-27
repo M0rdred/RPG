@@ -2,7 +2,6 @@ package dao;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.MissingNode;
-import static dao.ObjectDao.objectMapper;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;

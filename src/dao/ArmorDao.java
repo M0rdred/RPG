@@ -38,7 +38,7 @@ public class ArmorDao extends ObjectDao {
                 armors.add(armor);
             }
 
-            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(ARMOR_FILE_PATH), armors);
+            writer.writeValue(new File(ARMOR_FILE_PATH), armors);
         } catch (IOException ex) {
             Logger.getLogger(JsonDao.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -85,7 +85,7 @@ public class ArmorDao extends ObjectDao {
         }
 
         if (found) {
-            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(ARMOR_FILE_PATH), armors);
+            writer.writeValue(new File(ARMOR_FILE_PATH), armors);
         } else {
             System.out.println("There were no armor to delete. The name was " + name);
         }

@@ -38,7 +38,7 @@ public class AdventurerDao extends ObjectDao {
                 adventurers.add(adventurer);
             }
 
-            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(SAVE_FILE_PATH), adventurers);
+            writer.writeValue(new File(SAVE_FILE_PATH), adventurers);
         } catch (IOException ex) {
             Logger.getLogger(JsonDao.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -87,7 +87,7 @@ public class AdventurerDao extends ObjectDao {
         }
 
         if (found) {
-            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(SAVE_FILE_PATH), adventurers);
+            writer.writeValue(new File(SAVE_FILE_PATH), adventurers);
         } else {
             System.out.println("There were no character to delete. The name was " + name);
         }

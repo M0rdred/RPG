@@ -5,6 +5,7 @@
 package dao;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectWriter;
 import java.util.Scanner;
 
 /**
@@ -12,11 +13,12 @@ import java.util.Scanner;
  * @author dszabo1
  */
 public class ObjectDao {
-    
+
     protected static ObjectMapper objectMapper = new ObjectMapper();
-    
-    protected void contactFile(String resource){
-        
+    protected static ObjectWriter writer = objectMapper.writerWithDefaultPrettyPrinter();
+
+    protected void contactFile(String resource) {
+
     }
 
     protected String scanRow(String row, int numberOfAttribute) {

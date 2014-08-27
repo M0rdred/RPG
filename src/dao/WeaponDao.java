@@ -38,7 +38,7 @@ public class WeaponDao extends ObjectDao {
                 weapons.add(weapon);
             }
 
-            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(WEAPON_SAVE_FILE), weapons);
+            writer.writeValue(new File(WEAPON_SAVE_FILE), weapons);
         } catch (IOException ex) {
             Logger.getLogger(JsonDao.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -85,7 +85,7 @@ public class WeaponDao extends ObjectDao {
         }
 
         if (found) {
-            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(WEAPON_SAVE_FILE), weapons);
+            writer.writeValue(new File(WEAPON_SAVE_FILE), weapons);
         } else {
             System.out.println("There were no weapon to delete. The name was " + name);
         }
