@@ -1,11 +1,10 @@
 package dao;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.node.MissingNode;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.Scanner;
+import java.util.Iterator;
+import rpg.CharAttributes;
 
 public class CastesDao extends ObjectDao {
 
@@ -20,21 +19,44 @@ public class CastesDao extends ObjectDao {
             ASTRAL = 8;
 
     private static final String LEVELS_FILE = "src/files/CasteLeveling.json";
+    private static final String CASTE_THROW_FILE = "src/files/CasteThrowModes.json";
+    private static final String CASTE_BASE_FILE = "src/files/CasteBaseValues.json";
 
-    public String getAttributesMode(String caste, int attribute) throws IOException {
-        InputStream stream = getClass().getResourceAsStream("/files/CasteLeveling.txt");
-        String row, mode = null;
-        Scanner fileScanner = new Scanner(stream);
+    public static String getAttributesMode(String caste, CharAttributes attribute) throws IOException {
+        String mode = null;
+        JsonNode root = objectMapper.readValue(new File(CASTE_THROW_FILE), JsonNode.class);
+        JsonNode casteNode = root.path(caste);
 
-        while (fileScanner.hasNextLine()) {
-            row = fileScanner.nextLine();
-            if (row.contains(caste)) {
-                mode = scanRow(row, attribute);
-                break;
+        if (!casteNode.isMissingNode()) {
+            mode = casteNode.path(attribute.toString()).textValue();
+        } else {
+            System.out.println("No such caste: " + caste);
+        }
+        return mode;
+    }
+
+    public static Object[] getCasteBaseValues(String caste) throws IOException {
+
+        Object[] baseValues = new Object[10];
+        Object base;
+
+        JsonNode root = objectMapper.readValue(new File(CASTE_BASE_FILE), JsonNode.class);
+        JsonNode casteNode = root.path(caste);
+
+        if (!casteNode.isMissingNode()) {
+            int i = 0;
+            for (Iterator<JsonNode> it = casteNode.iterator(); it.hasNext();) {
+                JsonNode node = it.next();
+                if (node.isNumber()) {
+                    base = node.intValue();
+                } else {
+                    base = node.textValue();
+                }
+
+                baseValues[i++] = base;
             }
         }
-
-        return mode;
+        return baseValues;
     }
 
     public static Integer getLevelForCaste(int xp, String caste) throws IOException {

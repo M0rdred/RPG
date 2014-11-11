@@ -1,0 +1,86 @@
+{
+    "fighter": {
+        "elf": "true",
+        "halfElf": "true",
+        "dwarf": "true",
+        "orc": "true"
+    },
+    "gladiator": {
+        "elf": "true",
+        "halfElf": "true",
+        "dwarf": "true",
+        "orc": "true"
+    },
+    "headHunter": {
+        "elf": "true",
+        "halfElf": "true",
+        "dwarf": "false",
+        "orc": "true"
+    },
+    "knifht": {
+        "elf": "false",
+        "halfElf": "true",
+        "dwarf": "false",
+        "orc": "false"
+    },
+    "thief": {
+        "elf": "false",
+        "halfElf": "true",
+        "dwarf": "true",
+        "orc": "true"
+    },
+    "bard": {
+        "elf": "true",
+        "halfElf": "true",
+        "dwarf": "false",
+        "orc": "false"
+    },
+    "priest": {
+        "elf": "false",
+        "halfElf": "false",
+        "dwarf": "true",
+        "orc": "true"
+    },
+    "paladin": {
+        "elf": "false",
+        "halfElf": "false",
+        "dwarf": "false",
+        "orc": "false"
+    },
+    "martialArtist": {
+        "elf": "false",
+        "halfElf": "true",
+        "dwarf": "false",
+        "orc": "false"
+    },
+    "samurai": {
+        "elf": "false",
+        "halfElf": "true",
+        "dwarf": "false",
+        "orc": "false"
+    },
+    "witch": {
+        "elf": "false",
+        "halfElf": "true",
+        "dwarf": "false",
+        "orc": "false"
+    },
+    "warlock": {
+        "elf": "false",
+        "halfElf": "true",
+        "dwarf": "false",
+        "orc": "true"
+    },
+    "fireMage": {
+        "elf": "false",
+        "halfElf": "false",
+        "dwarf": "false",
+        "orc": "false"
+    },
+    "sorcerer": {
+        "elf": "true",
+        "halfElf": "true",
+        "dwarf": "true",
+        "orc": "false"
+    }
+}

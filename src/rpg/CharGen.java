@@ -9,21 +9,19 @@ import objects.Adventurer;
 public class CharGen {
 
     Scanner scanner = new Scanner(System.in);
-    private String charName, charGender, charRace, charCaste,charAlignment;
+    private static String charName, charGender, charRace = "elf", charCaste = "fighter", charAlignment;
     private String[] attributeNames = new String[]{"Strength", "Agility", "Dexterity", "Fitness", "Health", "Intelligence", "Beauty", "Willpower", "Astral"};
-    private int[] attributes = new int[9];
+    private static int[] attributes = new int[9];
     private int charAge;
 
-    public Adventurer buildCharacter() throws IOException, Exception {
+    public Adventurer buildNewCharacter() throws IOException, Exception {
 
-        test();
-
-//        setName();
-//        setGender();
-//        setAge();
-//        setRace();
-//        setCaste();
-//        setAlignment();
+        setName();
+        setGender();
+        setAge();
+        setRace();
+        setCaste();
+        setAlignment();
         setAttributes();
 
         Adventurer adventurer = new Adventurer(
@@ -32,6 +30,7 @@ public class CharGen {
                 attributes[6], attributes[7], attributes[8],
                 charName, charGender, charAge,
                 charRace, charCaste, charAlignment);
+        adventurer = setCombatValues(adventurer);
 
         return adventurer;
     }
@@ -100,31 +99,46 @@ public class CharGen {
         return charCaste;
     }
 
-    public void setAttributes() throws IOException, Exception {
-        CastesDao castes = new CastesDao();
-        RacesDao races = new RacesDao();
-        int value, max;
+    public static void setAttributes() throws IOException, Exception {
+        int value, max, i = 0;
+        for (CharAttributes attribute : CharAttributes.values()) {
 
-        for (int count = 0; count < 9; count++) {
-            value = 0;
-            System.out.println(attributeNames[count]);
+            value = RollDice.roll(CastesDao.getAttributesMode(charCaste, attribute));
 
-            //képesség kidobása
-            value = RollDice.roll(castes.getAttributesMode(charCaste, count));
-            //faji módosító hozzáadása
-            value += races.getAttributeModifierForRace(charRace, count);
-            //faji maximum ellenőrzése
-            max = races.getMaxAttributeValueForRace(charRace, count);
+            value += RacesDao.getRaceAttributeModifier(charRace, attribute);
+
+            max = RacesDao.getRaceMaxAttributeValue(charRace, attribute);
             if (value > max) {
                 value = max;
             }
-            //eredmény rögzítése
-            attributes[count] = value;
 
-            System.out.println(attributes[count]);
-            System.out.println("");
-            //eredmény kiírása
-//            System.out.printf("%15s%10s\n", attributeNames[count], attributes[count]);
+            attributes[i++] = value;
         }
+    }
+
+    private static Adventurer setCombatValues(Adventurer adventurer) throws IOException {
+        Object[] bases = CastesDao.getCasteBaseValues(adventurer.getCaste());
+        adventurer.setInitValue((int) bases[0]
+                + adventurer.getAgility() - 10
+                + adventurer.getDexterity() - 10);
+        adventurer.setAttackValue((int) bases[1]
+                + adventurer.getStrength() - 10
+                + adventurer.getAgility() - 10
+                + adventurer.getDexterity() - 10);
+        adventurer.setDefenseValue((int) bases[2]
+                + adventurer.getAgility() - 10
+                + adventurer.getDexterity() - 10);
+        adventurer.setTargetValue((int) bases[3]
+                + adventurer.getDexterity() - 10);
+        adventurer.setModPerLvl(bases[4].toString());
+        adventurer.setKp((int) bases[5]);
+        adventurer.setKpPerLvl((int) bases[6]);
+        adventurer.setÉp((int) bases[7]
+                + adventurer.getHealth());
+        adventurer.setFp((int) bases[8]
+                + adventurer.getFitness() - 10
+                + adventurer.getWillpower() - 10);
+        adventurer.setFpPerLvl(bases[9].toString());
+        return adventurer;
     }
 }
