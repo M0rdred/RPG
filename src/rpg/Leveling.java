@@ -69,7 +69,7 @@ public class Leveling {
             divided = scanner.nextInt();
 
             if (divided > modDivide) {
-                System.out.println("You can not spend more than " + modDivide + ", thats the most.");
+                System.out.println("You can not spend more than " + modDivide + ", that's the most.");
                 System.out.println("So I ask you again...");
                 System.out.println("");
                 continue;
