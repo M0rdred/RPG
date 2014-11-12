@@ -55,7 +55,7 @@ public class XmlDao {
                 + adventurer.getFpMax() + ";"
                 + adventurer.getÉpMax() + ";"
                 + adventurer.getMpMax() + ";"
-                + adventurer.getPsziMax() + ";"
+                + adventurer.getPsiMax() + ";"
                 + adventurer.getKp() + ";"
                 + adventurer.getXp() + "\n";
         
@@ -154,8 +154,8 @@ public class XmlDao {
                         case "mpMax":
                             adventurer.setMpMax(Integer.parseInt(eventReader.nextEvent().toString()));
                             continue;
-                        case "psziMax":
-                            adventurer.setPsziMax(Integer.parseInt(eventReader.nextEvent().toString()));
+                        case "psiMax":
+                            adventurer.setPsiMax(Integer.parseInt(eventReader.nextEvent().toString()));
                             continue;
                         case "kp":
                             adventurer.setKp(Integer.parseInt(eventReader.nextEvent().toString()));

@@ -64,13 +64,13 @@ public class TxtDao {
                 adventurer.setFpMax(Integer.parseInt(scanRow(row, 18)));
                 adventurer.setÉpMax(Integer.parseInt(scanRow(row, 19)));
                 adventurer.setMpMax(Integer.parseInt(scanRow(row, 20)));
-                adventurer.setPsziMax(Integer.parseInt(scanRow(row, 21)));
+                adventurer.setPsiMax(Integer.parseInt(scanRow(row, 21)));
                 adventurer.setKp(Integer.parseInt(scanRow(row, 22)));
                 adventurer.setXp(Integer.parseInt(scanRow(row, 23)));
                 adventurer.setFp(adventurer.getFpMax());
                 adventurer.setÉp(adventurer.getÉpMax());
                 adventurer.setMp(adventurer.getMpMax());
-                adventurer.setPszi(adventurer.getPsziMax());
+                adventurer.setPsi(adventurer.getPsiMax());
                 adventurer.setAlive(true);
                 adventurer.setConscious(true);
                 adventurer.setWeapons(Arrays.asList(new Weapon(10, 4, 1, 0, 2, "fist", "k6", "melee")));
@@ -107,7 +107,7 @@ public class TxtDao {
                 + adventurer.getFpMax() + ";"
                 + adventurer.getÉpMax() + ";"
                 + adventurer.getMpMax() + ";"
-                + adventurer.getPsziMax() + ";"
+                + adventurer.getPsiMax() + ";"
                 + adventurer.getKp() + ";"
                 + adventurer.getXp() + "\n";
         File file = new File(SAVE_FILE_PATH);

@@ -20,8 +20,8 @@ import rpg.RollDice;
  */
 @JsonPropertyOrder({"name", "gender", "age", "race", "caste", "alignment",
     "Strength", "Agility", "Dexterity", "Fitness", "Health", "Intelligence", "Beauty", "Willpower", "Astral",
-    "initValue", "attackValue", "defenseValue", "targetValue", "FpMax", "ÉpMax", "PsziMax", "MpMax", "Kp",
-    "modPerLvl", "FpPerLvl", "psziPerLvl", "MpPerLvl", "KpPerLvl",
+    "initValue", "attackValue", "defenseValue", "targetValue", "FpMax", "ÉpMax", "PsiMax", "MpMax", "Kp",
+    "modPerLvl", "FpPerLvl", "psiPerLvl", "MpPerLvl", "KpPerLvl",
     "Tp",
     "weapons", "armor"})
 public class Adventurer {
@@ -68,7 +68,7 @@ public class Adventurer {
 
     private String modPerLvl;
 
-    private int PsziPerLvl;
+    private int PsiPerLvl;
 
     private int MpPerLvl;
 
@@ -86,7 +86,7 @@ public class Adventurer {
     private int Mp;
 
     @JsonIgnore
-    private int Pszi;
+    private int Psi;
 
     private int FpMax;
 
@@ -94,7 +94,7 @@ public class Adventurer {
 
     private int MpMax;
 
-    private int PsziMax;
+    private int PsiMax;
 
     private int Kp;
 
@@ -213,7 +213,7 @@ public class Adventurer {
         Fp = FpMax;
         Ép = ÉpMax;
         Mp = MpMax;
-        Pszi = PsziMax;
+        Psi = PsiMax;
     }
 
     public int calculateInitValue() {
@@ -413,12 +413,12 @@ public class Adventurer {
         this.modPerLvl = modPerLvl;
     }
 
-    public int getPsziPerLvl() {
-        return PsziPerLvl;
+    public int getPsiPerLvl() {
+        return PsiPerLvl;
     }
 
-    public void setPsziPerLvl(int PsziPerLvl) {
-        this.PsziPerLvl = PsziPerLvl;
+    public void setPsiPerLvl(int PsiPerLvl) {
+        this.PsiPerLvl = PsiPerLvl;
     }
 
     public int getMpPerLvl() {
@@ -469,12 +469,12 @@ public class Adventurer {
         this.Mp = Mp;
     }
 
-    public int getPszi() {
-        return Pszi;
+    public int getPsi() {
+        return Psi;
     }
 
-    public void setPszi(int Pszi) {
-        this.Pszi = Pszi;
+    public void setPsi(int Psi) {
+        this.Psi = Psi;
     }
 
     public int getFpMax() {
@@ -501,12 +501,12 @@ public class Adventurer {
         this.MpMax = MpMax;
     }
 
-    public int getPsziMax() {
-        return PsziMax;
+    public int getPsiMax() {
+        return PsiMax;
     }
 
-    public void setPsziMax(int PsziMax) {
-        this.PsziMax = PsziMax;
+    public void setPsiMax(int PsiMax) {
+        this.PsiMax = PsiMax;
     }
 
     public int getKp() {

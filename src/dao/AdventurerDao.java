@@ -85,7 +85,7 @@ public class AdventurerDao extends ObjectDao {
                 break;
             }
         }
-
+        
         if (found) {
             writer.writeValue(new File(SAVE_FILE_PATH), adventurers);
         } else {

@@ -44,11 +44,11 @@
   "fp" : 37,
   "ép" : 8,
   "mp" : 0,
-  "pszi" : 0,
+  "psi" : 0,
   "fpMax" : 37,
   "épMax" : 8,
   "mpMax" : 0,
-  "psziMax" : 0,
+  "psiMax" : 0,
   "kp" : 0,
   "xp" : 0
 }, {
@@ -97,11 +97,11 @@
   "fp" : 50,
   "ép" : 10,
   "mp" : 0,
-  "pszi" : 0,
+  "psi" : 0,
   "fpMax" : 50,
   "épMax" : 10,
   "mpMax" : 0,
-  "psziMax" : 0,
+  "psiMax" : 0,
   "kp" : 0,
   "xp" : 0
 }, {
@@ -150,11 +150,11 @@
   "fp" : 40,
   "ép" : 6,
   "mp" : 0,
-  "pszi" : 0,
+  "psi" : 0,
   "fpMax" : 40,
   "épMax" : 6,
   "mpMax" : 0,
-  "psziMax" : 0,
+  "psiMax" : 0,
   "kp" : 0,
   "xp" : 0
 } ]

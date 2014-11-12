@@ -10,6 +10,11 @@ package rpg;
  */
 public enum CharAttributes {
 
-    Strength, Agility, Dexterity, Fitness, Health, Intelligence, Beauty, Willpower, Astral;
+    STRENGTH(0), AGILITY(1), DEXTERITY(2), FITNESS(3), HEALTH(4), INTELLIGENCE(5), BEAUTY(6), WILLPOWER(7), ASTRAL(8);
 
+    private CharAttributes(int value) {
+        code = value;
+    }
+
+    int code;
 }

@@ -10,7 +10,7 @@
   "defenseValue" : 82,
   "targetValue" : 0,
   "modPerLvl" : "11(3)",
-  "psziPerLvl" : 0,
+  "psiPerLvl" : 0,
   "weapons" : [ {
     "name" : "fist",
     "damage" : "k6",
@@ -45,11 +45,11 @@
   "level" : 2,
   "mpPerLvl" : 0,
   "mp" : 0,
-  "pszi" : 0,
+  "psi" : 0,
   "fpMax" : 47,
   "épMax" : 8,
   "mpMax" : 0,
-  "psziMax" : 0,
+  "psiMax" : 0,
   "xp" : 200,
   "intelligence" : 13
 }, {
@@ -64,7 +64,7 @@
   "defenseValue" : 79,
   "targetValue" : 0,
   "modPerLvl" : "11(3)",
-  "psziPerLvl" : 0,
+  "psiPerLvl" : 0,
   "weapons" : [ {
     "name" : "fist",
     "damage" : "k6",
@@ -99,11 +99,11 @@
   "level" : 1,
   "mpPerLvl" : 0,
   "mp" : 0,
-  "pszi" : 0,
+  "psi" : 0,
   "fpMax" : 50,
   "épMax" : 10,
   "mpMax" : 0,
-  "psziMax" : 0,
+  "psiMax" : 0,
   "xp" : 100,
   "intelligence" : 8
 }, {
@@ -118,7 +118,7 @@
   "defenseValue" : 100,
   "targetValue" : 0,
   "modPerLvl" : "11(3)",
-  "psziPerLvl" : 0,
+  "psiPerLvl" : 0,
   "weapons" : [ {
     "name" : "fist",
     "damage" : "k6",
@@ -153,11 +153,11 @@
   "level" : 1,
   "mpPerLvl" : 0,
   "mp" : 0,
-  "pszi" : 0,
+  "psi" : 0,
   "fpMax" : 40,
   "épMax" : 6,
   "mpMax" : 0,
-  "psziMax" : 0,
+  "psiMax" : 0,
   "xp" : 100,
   "intelligence" : 10
 } ]

@@ -41,7 +41,7 @@ public class Leveling {
         }
 
         adventurer.setFpMax(adventurer.getFpMax() + RollDice.roll(adventurer.getFpPerLvl()));
-        adventurer.setPsziMax(adventurer.getPsziMax() + adventurer.getPsziPerLvl());
+        adventurer.setPsiMax(adventurer.getPsiMax() + adventurer.getPsiPerLvl());
         adventurer.setMpMax(adventurer.getMpMax() + adventurer.getMpPerLvl());
         adventurer.setKp(adventurer.getKp() + adventurer.getKpPerLvl());
         adventurer.setLevel(adventurer.getLevel() + 1);
