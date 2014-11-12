@@ -4,6 +4,8 @@
  */
 package rpg;
 
+import dao.AdventurerDao;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -21,11 +23,11 @@ public class Combat {
 
     /**
      * Organizes the fight between <tt>listOfAdventurers<tt>.
-     *
-     * @param listOfAdventurers
+     * <p>
+     * @param listOfAdventurers <p>
      * @return
      */
-    public Adventurer fight(List<Adventurer> listOfAdventurers) {
+    public Adventurer fight(List<Adventurer> listOfAdventurers) throws IOException {
         Adventurer winner = null;
 
         for (Adventurer adv : listOfAdventurers) {
@@ -50,11 +52,11 @@ public class Combat {
 
     /**
      * Plays one round of fight
-     *
-     * @param adventurerList
+     * <p>
+     * @param adventurerList <p>
      * @return
      */
-    private Adventurer round(List<Adventurer> adventurerList) {
+    private Adventurer round(List<Adventurer> adventurerList) throws IOException {
 
         int index, attack, defense, attacksInRound = 1, damage = 0;
         Adventurer winner;
@@ -123,6 +125,8 @@ public class Combat {
 //                winner = adventurer;
 //                return winner;
                 adventurerList.remove(index);
+                adventurer = Leveling.gainXp(adventurer, Leveling.calculateXpGain(adventurer, defender));
+                AdventurerDao.saveAdventurer(adventurer);
                 System.out.printf("%s is out of business!\n", defender.getName());
             }
 
@@ -152,8 +156,8 @@ public class Combat {
     /**
      * Plays initiation for param List<Adventurer> . If value is equal to
      * former, throws again
-     *
-     * @param adventurers
+     * <p>
+     * @param adventurers <p>
      * @return init Array filled with values of adventurers
      */
     private int[] initiation(List<Adventurer> adventurers) {

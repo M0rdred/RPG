@@ -4,9 +4,10 @@
  * and open the template in the editor.
  */
 
-package dao;
+package rpg;
 
-import java.util.List;
+import dao.AdventurerDao;
+import java.io.IOException;
 import objects.Adventurer;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -19,9 +20,9 @@ import static org.junit.Assert.*;
  *
  * @author dszabo1
  */
-public class AdventurerDaoTest {
+public class LevelingTest {
     
-    public AdventurerDaoTest() {
+    public LevelingTest() {
     }
     
     @BeforeClass
@@ -41,52 +42,47 @@ public class AdventurerDaoTest {
     }
 
     /**
-     * Test of saveAdventurer method, of class AdventurerDao.
+     * Test of gainXp method, of class Leveling.
      */
     @Test
-    public void testSaveAdventurer() throws Exception {
-        System.out.println("saveAdventurer");
+    public void testGainXp() throws Exception {
+        System.out.println("gainXp");
         Adventurer adventurer = null;
-        AdventurerDao.saveAdventurer(adventurer);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getAdventurer method, of class AdventurerDao.
-     */
-    @Test
-    public void testGetAdventurer() throws Exception {
-        System.out.println("getAdventurer");
-        String name = "";
+        int xpGained = 0;
         Adventurer expResult = null;
-        Adventurer result = AdventurerDao.getAdventurer(name);
+        Adventurer result = Leveling.gainXp(adventurer, xpGained);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of getAllAdventurer method, of class AdventurerDao.
+     * Test of levelUp method, of class Leveling.
      */
     @Test
-    public void testGetAllAdventurer() throws Exception {
-        System.out.println("getAllAdventurer");
-        List<Adventurer> expResult = null;
-        List<Adventurer> result = AdventurerDao.getAllAdventurer();
+    public void testLevelUp() {
+        System.out.println("levelUp");
+        Adventurer adventurer = null;
+        Adventurer expResult = null;
+        Adventurer result = Leveling.levelUp(adventurer);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of deleteAdventurer method, of class AdventurerDao.
+     * Test of calculateXpGain method, of class Leveling.
      */
     @Test
-    public void testDeleteAdventurer() throws Exception {
-        System.out.println("deleteAdventurer");
-        String name = "";
-        AdventurerDao.deleteAdventurer(name);
+    public void testCalculateXpGain() throws IOException {
+        System.out.println("calculateXpGain");
+        Adventurer winner = AdventurerDao.getAdventurer("Mordred");
+        Adventurer loser = AdventurerDao.getAdventurer("Darton");
+        winner.setFp(20);
+        winner.setÉp(5);
+        int expResult = 0;
+        int result = Leveling.calculateXpGain(winner, loser);
+        assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }

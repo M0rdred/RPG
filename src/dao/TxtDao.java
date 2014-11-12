@@ -66,7 +66,7 @@ public class TxtDao {
                 adventurer.setMpMax(Integer.parseInt(scanRow(row, 20)));
                 adventurer.setPsziMax(Integer.parseInt(scanRow(row, 21)));
                 adventurer.setKp(Integer.parseInt(scanRow(row, 22)));
-                adventurer.setTp(Integer.parseInt(scanRow(row, 23)));
+                adventurer.setXp(Integer.parseInt(scanRow(row, 23)));
                 adventurer.setFp(adventurer.getFpMax());
                 adventurer.setÉp(adventurer.getÉpMax());
                 adventurer.setMp(adventurer.getMpMax());
@@ -109,7 +109,7 @@ public class TxtDao {
                 + adventurer.getMpMax() + ";"
                 + adventurer.getPsziMax() + ";"
                 + adventurer.getKp() + ";"
-                + adventurer.getTp() + "\n";
+                + adventurer.getXp() + "\n";
         File file = new File(SAVE_FILE_PATH);
         System.out.println("Looking for file " + file.getAbsolutePath());
         FileWriter fileWriter = new FileWriter(file, true);

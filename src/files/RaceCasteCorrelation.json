@@ -11,7 +11,7 @@
         "dwarf": "true",
         "orc": "true"
     },
-    "headHunter": {
+    "headhunter": {
         "elf": "true",
         "halfElf": "true",
         "dwarf": "false",
@@ -47,7 +47,7 @@
         "dwarf": "false",
         "orc": "false"
     },
-    "martialArtist": {
+    "martialartist": {
         "elf": "false",
         "halfElf": "true",
         "dwarf": "false",
@@ -71,7 +71,7 @@
         "dwarf": "false",
         "orc": "true"
     },
-    "fireMage": {
+    "firemage": {
         "elf": "false",
         "halfElf": "false",
         "dwarf": "false",

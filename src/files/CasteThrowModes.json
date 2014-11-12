@@ -21,7 +21,7 @@
         "Willpower": "3k6",
         "Astral": "3k6"
     },
-    "headHunter": {
+    "headhunter": {
         "Strength": "2k6+2",
         "Agility": "k6+12+kf",
         "Dexterity": "k10+8",
@@ -87,7 +87,7 @@
         "Willpower": "k10+8",
         "Astral": "k6+12"
     },
-    "martialArtist": {
+    "martialartist": {
         "Strength": "k10+8",
         "Agility": "k6+14",
         "Dexterity": "k6+12",
@@ -131,7 +131,7 @@
         "Willpower": "null",
         "Astral": "null"
     },
-    "fireMage": {
+    "firemage": {
         "Strength": "2k6+6",
         "Agility": "3k6(2x)",
         "Dexterity": "3k6(2x)",

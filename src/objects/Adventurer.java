@@ -64,7 +64,7 @@ public class Adventurer {
 
     private int targetValue;
 
-    private int Level;
+    private int Level;    
 
     private String modPerLvl;
 
@@ -98,7 +98,7 @@ public class Adventurer {
 
     private int Kp;
 
-    private int Tp;
+    private int Xp;
 
     private int combatModifier[] = new int[5];  //initValue, attackValue, defenseValue, targetValue, Sebzés       
 
@@ -396,6 +396,14 @@ public class Adventurer {
     public void setTargetValue(int targetValue) {
         this.targetValue = targetValue;
     }
+    
+    public int getLevel() {
+        return Level;
+    }
+
+    public void setLevel(int Level) {
+        this.Level = Level;
+    }
 
     public String getModPerLvl() {
         return modPerLvl;
@@ -509,12 +517,12 @@ public class Adventurer {
         this.Kp = Kp;
     }
 
-    public int getTp() {
-        return Tp;
+    public int getXp() {
+        return Xp;
     }
 
-    public void setTp(int Tp) {
-        this.Tp = Tp;
+    public void setXp(int Xp) {
+        this.Xp = Xp;
     }
 
     public String getName() {

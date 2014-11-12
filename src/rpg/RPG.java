@@ -5,6 +5,7 @@
 package rpg;
 
 import dao.AdventurerDao;
+import gui.MainWindow;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +23,7 @@ public class RPG {
         CharGen generator = new CharGen();
         Combat combat = new Combat();
         Scanner scanner = new Scanner(System.in);
-
+        
         Adventurer adventurerA = AdventurerDao.getAdventurer("Mordred");
         Adventurer adventurerB = AdventurerDao.getAdventurer("Darton");
         Adventurer adventurerC = AdventurerDao.getAdventurer("Ranagol");

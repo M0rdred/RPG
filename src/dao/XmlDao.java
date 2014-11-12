@@ -57,7 +57,7 @@ public class XmlDao {
                 + adventurer.getMpMax() + ";"
                 + adventurer.getPsziMax() + ";"
                 + adventurer.getKp() + ";"
-                + adventurer.getTp() + "\n";
+                + adventurer.getXp() + "\n";
         
         File file = new File("./SavedCharacters.xml");
         JAXBContext context = JAXBContext.newInstance(Adventurer.class);
@@ -161,7 +161,7 @@ public class XmlDao {
                             adventurer.setKp(Integer.parseInt(eventReader.nextEvent().toString()));
                             continue;
                         case "tp":
-                            adventurer.setTp(Integer.parseInt(eventReader.nextEvent().toString()));
+                            adventurer.setXp(Integer.parseInt(eventReader.nextEvent().toString()));
                             continue;
                         
                         case "weaponList":

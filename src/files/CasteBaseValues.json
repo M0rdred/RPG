@@ -21,7 +21,7 @@
         "épBase": 8,
         "fpBase": 7,
         "fpPerLvl": "k6+5"},
-    "headHunter": {
+    "headhunter": {
         "initValueBase": 10,
         "attackValueBase": 20,
         "defenseValueBase": 75,
@@ -87,7 +87,7 @@
         "épBase": 8,
         "fpBase": 7,
         "fpPerLvl": "k6+5"},
-    "martialArtist": {
+    "martialartist": {
         "initValueBase": 10,
         "attackValueBase": 20,
         "defenseValueBase": 75,
@@ -131,7 +131,7 @@
         "épBase": 3,
         "fpBase": 4,
         "fpPerLvl": "k6+1"},
-    "fireMage": {
+    "firemage": {
         "initValueBase": 6,
         "attackValueBase": 17,
         "defenseValueBase": 72,

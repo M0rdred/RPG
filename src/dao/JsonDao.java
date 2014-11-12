@@ -106,7 +106,7 @@ public class JsonDao {
          -----------------------------------------
         
          String[] races = {"elf", "halfElf", "dwarf", "orc"};
-         String[] castes = {"fighter", "gladiator", "headHunter", "knight", "thief", "bard", "priest", "paladin", "martialArtist", "samurai", "witch", "warlock", "fireMage", "sorcerer"};
+         String[] castes = {"fighter", "gladiator", "headhunter", "knight", "thief", "bard", "priest", "paladin", "martialartist", "samurai", "witch", "warlock", "firemage", "sorcerer"};
          String[] attributess = {"Strength", "Agility", "Dexterity", "Fitness", "Health", "Intelligence", "Beauty", "Willpower", "Astral"};
          int[] levels = {1,2,3,4,5,6,7,8,9,10,11,12,13};
          String value = "";
