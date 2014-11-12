@@ -36,14 +36,14 @@ public class RPG {
         adventurers.add(adventurerB);
 
         adventurers.add(adventurerC);
+        
+        MainWindow window = new MainWindow();
 
-        try {
-//            adventurerA = generator.buildCharacter();
-//            adventurerB = generator.buildCharacter();
-            winner = combat.fight(adventurers);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//        try {         
+//            winner = combat.fight(adventurers);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
 
     }
 }
